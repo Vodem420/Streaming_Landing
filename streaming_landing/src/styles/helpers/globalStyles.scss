@@ -5,16 +5,23 @@ html{
     height: 100%;
     font-size: 10px;
 }
+
 body{
     font-size: 1.6rem;
-    @font-face {
-        font-family: "Trebuchet MS";
-        src: url("//db.onlinewebfonts.com/t/03e852a9d1635cf25800b41001ee80c7.eot");
-        src: url("//db.onlinewebfonts.com/t/03e852a9d1635cf25800b41001ee80c7.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/03e852a9d1635cf25800b41001ee80c7.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/03e852a9d1635cf25800b41001ee80c7.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/03e852a9d1635cf25800b41001ee80c7.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/03e852a9d1635cf25800b41001ee80c7.svg#Trebuchet MS") format("svg"); 
-    }
     font-family: "Roboto", sans-serif;
+
+    @keyframes animatedCircle {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translate(-5rem, -5rem);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+    .animated {
+        animation: animatedCircle 6s linear infinite;
+    }
 }

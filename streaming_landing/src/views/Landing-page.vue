@@ -65,7 +65,7 @@
             </div>
             <div class="S1__responsiveRight">
                     <img :src="$img['S7__1']"/>
-                    <div class="bxsh-circle"></div>
+                    <div class="bxsh-circle animated"></div>
                     <button class="btn btn__main">Sign up now</button>
             </div>
             <div class="S1__right responsive">
@@ -129,7 +129,7 @@
                     <span :class="{active: withEmail}" @click="openData()"></span>
                 </div>
             </div>
-            <div class="bxsh-circle"></div>
+            <div class="bxsh-circle animated"></div>
         </div>
         <div class="S2">
             <section class="splide">
@@ -154,7 +154,7 @@
                         <b>Watch streams</b> without hindrance and meet someone <b>who interests you.</b>
                     </p>
                     <button class="btn btn__main">Join for free</button>
-                    <div class="bxsh-circle"></div>
+                    <div class="bxsh-circle animated"></div>
                 </div>
             </div>
         </div>
@@ -204,7 +204,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bxsh-circle"></div>
+                <div class="bxsh-circle animated"></div>
             </div>
         </div>
         <div class="S5__wrapper">
@@ -230,7 +230,7 @@
                     <img :src="$img['S5__5']"/>
                     <span>Fascinating hobbies and exciting occupations from people you fancy.</span>
                 </div>
-                <div class="bxsh-circle"></div>
+                <div class=" animated"></div>
             </div>
         </div>
         <div class="S6__wrapper">
@@ -250,7 +250,7 @@
                 </section>
                 <button class="btn btn__main static">Join for free</button>
                 <button class="btn btn__main responsive">Join us for free</button>
-                <div class="bxsh-circle"></div>
+                <div class="bxsh-circle animated"></div>
             </div>
         </div>
         <div class="S7__wrapper">
@@ -265,7 +265,7 @@
                 </div>
                 <div class="S7__right">
                     <img :src="$img['S7__1']"/>
-                    <div class="bxsh-circle"></div>
+                    <div class="bxsh-circle animated"></div>
                 </div>
             </div>
         </div>

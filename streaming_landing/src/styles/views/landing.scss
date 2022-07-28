@@ -1,7 +1,8 @@
 .LandingPage{
     background-color: var(--BgMain);
     header{
-        max-width: 86%;
+        width: var(--ContentWidth);
+        max-width: 90%;
         margin: 0 auto;
         padding: 4.8rem 0 7.9rem;
         @include media(phone){
@@ -25,7 +26,8 @@
     }
     .S1{
         @include flex(flex, false, space-between);
-        max-width: 86%;
+        width: var(--ContentWidth);
+        max-width: 90%;
         margin: 0 auto 12.5rem;
         position: relative;
         @include media(tablet){
@@ -79,11 +81,12 @@
             @include flex(flex, center);
             flex-direction: column;
             width: 48.3rem;
+            min-height: 72.6rem;
             z-index: 2;
             @include media(reverso-phone){
                 padding: 5.8rem 6.3rem;
                 border-radius: 3rem;
-                background: #FFFFFF;
+                background: var(--BgWhite);
             }
             @include media(phone){
                 display: none;
@@ -95,7 +98,7 @@
                 padding: .4rem 0 .3rem .3rem;
                 margin-bottom: 1.8rem;
                 background: #1A73E8;
-                color: #FFFFFF;
+                color: var(--ColorWhite);
                 box-shadow: inset 0px 0px 10px rgba(38, 31, 123, 0.05);
                 border-radius: 1rem;
                 cursor: pointer;
@@ -104,7 +107,7 @@
                     height: 5.4rem;
                     padding: 1.2rem;
                     margin-right: 3.5rem;
-                    background: #FFFFFF;
+                    background: var(--BgWhite);
                     border-radius: .7rem;
                     &.email{
                         padding: 1.6rem 1.2rem;
@@ -116,7 +119,7 @@
                 .btn__main{
                     height: 6rem;
                     width: 100%;
-                    margin-bottom: 4rem;
+                    margin-bottom: 13.2rem;
                 }
                 .rules{
                     @include flex(flex, flex-start);
@@ -134,7 +137,7 @@
                         font-weight: 400;
                         font-size: 1rem;
                         line-height: 1.2rem;
-                        color: #8789A1;
+                        color: var(--ColorGray);
                     }
                 }
             }
@@ -143,7 +146,7 @@
                 font-weight: 400;
                 font-size: 1.8rem;
                 line-height: 2.1rem;
-                color: #8789A1;
+                color: var(--ColorGray);
             }
             .inputWrapper{
                 width: 100%;
@@ -158,7 +161,7 @@
                     margin-right: .1rem;
                     font-size: 1.2rem;
                     line-height: 1.4rem;
-                    color: #8789A1;
+                    color: var(--ColorGray);
                     border: none;
                     background: #F5F7F9;
                     box-shadow: inset 0px 0px 5.7971px rgba(0, 0, 0, 0.02);
@@ -174,7 +177,7 @@
                 padding-bottom: 1.2rem;
                 font-size: 1.8rem;
                 line-height: 2.1rem;
-                color: #303030;
+                color: var(--ColorBlack);
             }
             .password{
                 + img{
@@ -194,18 +197,21 @@
                 text-align: center;
                 color: #595B75;
             }
-            .slider span{
-                &.active{
-                    background: rgba(88, 147, 250, 0.2);
+            .slider{
+                margin-top: auto;
+                span{
+                    &.active{
+                        background: rgba(88, 147, 250, 0.2);
+                    }
+                    display: inline-block;
+                    width: 3rem;
+                    height: .5rem;
+                    margin: 0.5rem;
+                    background: #5893FA;
+                    border-radius: .5rem;
+                    cursor: pointer;
                 }
-                display: inline-block;
-                width: 3rem;
-                height: .5rem;
-                margin: 0.5rem;
-                background: #5893FA;
-                border-radius: .5rem;
-                cursor: pointer;
-            }
+            }   
             &.responsive{
                 display: block;
                 margin-top: 6rem;
@@ -222,7 +228,7 @@
                         font-size: 2.6rem;
                         line-height: 3rem;
                         text-align: left;
-                        color: #303030;
+                        color: var(--ColorBlack);
                     }
                     p{
                         max-width: 90%;
@@ -231,14 +237,14 @@
                         font-size: 1.6rem;
                         line-height: 1.9rem;
                         text-align: left;
-                        color: #303030;
+                        color: var(--ColorBlack);
                     }
                     + div{
                         max-width: 96%;
                         margin: 0 auto;
                         padding: 3rem;
                         border-radius: 1.8rem;
-                        background: #FFFFFF;
+                        background: var(--BgWhite);
                         filter: drop-shadow(0px 5.7971px 23.1884px rgba(0, 0, 0, 0.1));
                     }
                 }
@@ -301,13 +307,19 @@
                     filter: blur(120px);
                 }
             }
+            @include media(p-phone){
+                .bxsh-circle{
+                    width: 100%;
+                    height: 40rem;
+                }
+            }
         }
     }
     .S2{
         @include flex(flex);
         overflow: hidden;
         @include media(reverso-phone){
-            background-color: #FFFFFF;
+            background: var(--BgWhite);
         }
         img{
             width: 100%;
@@ -335,7 +347,7 @@
         @include flex(flex, center);
         flex-direction: column;
         padding: 6.6rem 0 8rem;
-        background: #FFFFFF;
+        background: var(--BgWhite);
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
         border-radius: 6rem;
         z-index: 2;
@@ -349,7 +361,8 @@
             overflow: hidden;
         }
         &__wrapper{
-            max-width: 86%;
+            width: var(--ContentWidth);
+            max-width: 90%;
             margin: 17.6rem auto 17rem;
             position: relative;
             z-index: 3;
@@ -365,7 +378,7 @@
             font-size: 5.6rem;
             line-height: 6.5rem;
             text-align: center;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(phone){
                 font-size: 2.6rem;
                 line-height: 3rem;
@@ -378,7 +391,7 @@
             font-size: 2.4rem;
             line-height: 2.8rem;
             text-align: center;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(phone){
                 font-size: 1.6rem;
                 line-height: 1.9rem;
@@ -411,7 +424,8 @@
         @include flex(flex);
         flex-direction: column;
         &__wrapper{
-            max-width: 84%;
+            width: var(--ContentWidth);
+            max-width: 90%;
             margin: 0 auto 17rem;
             position: relative;
             z-index: 2;
@@ -426,7 +440,7 @@
             font-size: 5.6rem;
             line-height: 6.5rem;
             text-align: center;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(phone){
                 font-size: 2.6rem;
                 line-height: 3rem;
@@ -464,7 +478,7 @@
         &__item{
             width: 40rem;
             padding: 4.5rem 4.5rem 3.4rem;
-            background: #FFFFFF;
+            background: var(--BgWhite);
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
             border-radius: 4rem;
             @include media(reverso-tablet){
@@ -497,7 +511,7 @@
             font-weight: 700;
             font-size: 2.4rem;
             line-height: 2.8rem;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(phone){
                 font-size: 1.8rem;
                 line-height: 2.1rem;
@@ -507,7 +521,7 @@
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 2.1rem;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(phone){
                 font-size: 1.6rem;
                 line-height: 1.9rem;
@@ -524,6 +538,7 @@
             border-radius: 25.3rem;
             z-index: -1;
             @include media(phone){
+                width: 100%;
                 top: 50%;
                 left: -25%;
                 transform: translateX(+20%);
@@ -552,7 +567,7 @@
             font-size: 5.6rem;
             line-height: 6.5rem;
             text-align: center;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(phone){
                 font-size: 2.6rem;
                 line-height: 3rem;
@@ -562,7 +577,7 @@
             width: 100%;
             @include flex(flex, center);
             height: 12rem;
-            background: #FFFFFF;
+            background: var(--BgWhite);
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
             border-radius: 3rem;
             &:not(:last-child){
@@ -713,8 +728,8 @@
             position: absolute;
             top: 30%;
             left: 0;
-            width: 45rem;
-            height: 45rem;
+            width: 100%;
+            height: 35rem;
             background: linear-gradient(180deg, #3494E6 0%, #EC6EAD 100%);
             filter: blur(100px);
             border-radius: 25.3rem;
@@ -730,7 +745,8 @@
             display: none;
         }
         &__wrapper{
-            max-width: 86%;
+            width: var(--ContentWidth);
+            max-width: 90%;
             margin: 0 auto;
             z-index: 3;
             position: relative;
@@ -755,7 +771,7 @@
             font-weight: 700;
             font-size: 5.6rem;
             line-height: 6.5rem;
-            color: #303030;
+            color: var(--ColorBlack);
             @include media(desktop){
                 text-align: center;
             }
@@ -766,7 +782,7 @@
             font-weight: 400;
             font-size: 2.1rem;
             line-height: 2.4rem;
-            color: #303030;
+            color: var(--ColorBlack);
         }
         button{
             width: 35.7rem;
